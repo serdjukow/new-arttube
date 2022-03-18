@@ -7,7 +7,7 @@
 	<meta charset="utf-8">
 	<!-- <base href="/"> -->
 
-	<title>OptimizedHTML 5</title>
+	<title>ArtTube</title>
 	<meta name="description" content="Startup HTML template OptimizedHTML 5">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -21,15 +21,223 @@
 
 <body>
 
-	<div style="max-width: 700px; margin: auto">
+	<div class="wrapper">
+		<div class="navbar">
+			<div class="navbar__row navbar__container">
+				<div class="navbar__item">
+					<button class="navbar__menu-button menu-button">Меню</button>
+					<a class="button-set">
+						<img src="images/dist/icons/location.svg" alt="location" />
+						Москва
+					</a>
+				</div>
+		
+				<a href="#" class="navbar__logo logo">
+					<img src="images/dist/logo-dark.svg" alt="location" />
+				</a>
+		
+				<div class="navbar__item">
+					<a href="#" class="button-set">
+						<img src="images/dist/icons/language.svg" alt="location" />
+						RU
+					</a>
+					<a href="#" class="button-set">
+						<img src="images/dist/icons/log-in.svg" alt="location" />
+						Войти
+					</a>
+				</div>
+			</div>
+		</div>
 
-		<img src="images/dist/preview.jpg" alt="Start HTML5 Template" style="width: 100%"><br><br>
-		<h2 class="heading">Welcome to startup HTML template OptimizedHTML 5!</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam reprehenderit nulla alias expedita a qui, pariatur doloremque ipsa fugit laboriosam odio iure recusandae laborum delectus praesentium magni reiciendis voluptatem. Sed.</p>
 
+<header class="header">
+	<div class="header__top">
+		<img src="images/dist/index-header-bg.png" alt="header-bg" />
+		<div class="header__content header__container">
+			<h1 class="header__title">Афиша современного искусства</h1>
+			<p class="header__subtitle">России и СНГ</p>
+		</div>
 	</div>
+	<div class="header__bottom bottom__container">
+		<form class="header__search-form search-form">
+			<div class="search-form__items">
+				<div class="search-form__item">
+					<label>Город / событие</label>
+					<select>
+						<option value="Санкт-Петербург" selected>Санкт-Петербург</optionselected>
+						<option value="Москва">Москва</option>
+						<option value="Нижний Новгород">Нижний Новгород</option>
+						<option value="Самара">Самара</option>
+					  </select>
+				</div>
+				<div class="search-form__item">
+					<label>Дата</label>
+					<input type="date">
+				</div>
+			</div>
+			<button class="search-form__button button">Найти</button>
+		</form>
+	</div>
+</header>
 
-	<script src="js/app.min.js"></script>
+<main class="page">
+	<section class="current-events">
+		<div class="current-events__row current-events__container">
+			<h2 class="current-events__title page-title">Актуальные события</h2>
+			<div class="current-events__items">
+
+				<a href="#" class="current-events__item events-item">
+					<div class="events-item__img">
+						<img src="images/dist/1.png" alt="">
+					</div>
+
+					<div class="events-item__body">
+						<h4 class="events-item__title">
+							«Осколки» выставка Данилы Ткаченко
+						</h4>
+						<div class="events-item__date">
+							11 февраля – 4 сентября
+						</div>
+						<div class="events-item__place">
+							Галерея Люмьер
+						</div>
+					</div>
+					<div class="events-item__footer">
+						<span class="events-item__city">
+							Москва
+						</span>
+					</div>	
+				</a>
+
+				<a href="#" class="current-events__item events-item">
+					<div class="events-item__img">
+						<img src="images/dist/2.png" alt="">
+					</div>
+
+					<div class="events-item__body">
+						<h4 class="events-item__title">
+							Выставка «Апофения»
+						</h4>
+						<div class="events-item__date">
+							11 февраля – 4 сентября
+						</div>
+						<div class="events-item__place">
+							Галерея-мастерская «ГРАУНД Солянка»
+						</div>
+					</div>
+					<div class="events-item__footer">
+						<span class="events-item__city">
+							Москва
+						</span>
+					</div>	
+				</a>
+
+				<a href="#" class="current-events__item events-item">
+					<div class="events-item__img">
+						<img src="images/dist/3.png" alt="">
+					</div>
+
+					<div class="events-item__body">
+						<h4 class="events-item__title">
+							Выставка «Лики / Лица / Морды»
+						</h4>
+						<div class="events-item__date">
+							11 февраля – 4 сентября
+						</div>
+						<div class="events-item__place">
+							Мраморный дворец Русского музея
+						</div>
+					</div>
+					<div class="events-item__footer">
+						<span class="events-item__city">
+							Санкт-Петербург
+						</span>
+					</div>	
+				</a>
+
+				<a href="#" class="current-events__item events-item">
+					<div class="events-item__img">
+						<img src="images/dist/4.png" alt="">
+					</div>
+
+					<div class="events-item__body">
+						<h4 class="events-item__title">
+							Игорь Новиков. «Русские качели»
+						</h4>
+						<div class="events-item__date">
+							11 февраля – 4 сентября
+						</div>
+						<div class="events-item__place">
+							Галерея Коллекционного Искусства DiDi
+						</div>
+					</div>
+					<div class="events-item__footer">
+						<span class="events-item__city">
+							Санкт- Петербург
+						</span>
+					</div>	
+				</a>
+
+				<a href="#" class="current-events__item events-item">
+					<div class="events-item__img">
+						<img src="images/dist/5.png" alt="">
+					</div>
+
+					<div class="events-item__body">
+						<h4 class="events-item__title">
+							Выставка «Премия Кандинского. 15 лет»
+						</h4>
+						<div class="events-item__date">
+							11 февраля – 4 сентября
+						</div>
+						<div class="events-item__place">
+							Волго-Вятский филиал ГЦСИ
+						</div>
+					</div>
+					<div class="events-item__footer">
+						<span class="events-item__city">
+							Нижний Новгород
+						</span>
+					</div>	
+				</a>
+
+				<a href="#" class="current-events__item events-item">
+					<div class="events-item__img">
+						<img src="images/dist/1.png" alt="">
+					</div>
+
+					<div class="events-item__body">
+						<h4 class="events-item__title">
+							«Осколки» выставка Данилы Ткаченко
+						</h4>
+						<div class="events-item__date">
+							11 февраля – 4 сентября
+						</div>
+						<div class="events-item__place">
+							Галерея Современного Искусства
+						</div>
+					</div>
+					<div class="events-item__footer">
+						<span class="events-item__city">
+							
+							Екаткринбург
+						</span>
+					</div>	
+				</a>
+
+			</div>
+		</div>
+
+	</section>
+</main>
+
+<footer class="footer">		
+	<div class="footer__row footer__container">
+		Footer
+	</div>
+</footer>
+</div>
+<script src="js/app.min.js"></script>
 
 </body>
 </html>
