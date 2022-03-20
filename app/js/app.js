@@ -1,8 +1,8 @@
-// // Import vendor jQuery plugin example
-// import '~/app/libs/mmenu/dist/mmenu.js'
-
 document.addEventListener('DOMContentLoaded', () => {
-
-	// Custom JS
-
+	const headerSticky = () => {
+		const wrapper = document.querySelector('body')
+		const navbar = document.querySelector('.navbar')
+		wrapper.addEventListener('scroll', () => (wrapper.scrollTop >= 200 ? navbar.classList.add('sticky') : navbar.classList.remove('sticky')))
+	}
+	headerSticky()
 })
